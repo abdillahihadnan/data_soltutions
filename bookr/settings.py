@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 
 import os
 
-import django_heroku
-
 from configurations import Configuration, values
 
 
@@ -125,8 +123,8 @@ class Dev(Configuration):
 
     STATIC_URL = '/static/'
     
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    # STATIC_ROOT = values.Value()
+    # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATIC_ROOT = values.Value()
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -139,6 +137,3 @@ class Dev(Configuration):
 class Prod(Dev):
     DEBUG = False
     SECRET_KEY = values.SecretValue()
-
-# Activate Django-Heroku.
-django_heroku.settings(locals())
