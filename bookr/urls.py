@@ -31,9 +31,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', reviews.views.index),
     path('book-search/', reviews.views.book_search, name='book_search'),
-    path('', include('reviews.urls')),
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+    path('', include('reviews.urls'))
 ]
 
 if settings.DEBUG:
