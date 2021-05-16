@@ -18,6 +18,9 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
+from django.views.static import serve 
+from django.conf.urls import url
+
 import bookr.views
 import reviews.views
 
@@ -28,7 +31,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', reviews.views.index),
     path('book-search/', reviews.views.book_search, name='book_search'),
-    path('', include('reviews.urls'))
+    path('', include('reviews.urls')),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
 
 if settings.DEBUG:

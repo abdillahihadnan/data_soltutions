@@ -28,7 +28,7 @@ class Dev(Configuration):
     # SECURITY WARNING: don't run with debug turned on in production!
     DEBUG = values.BooleanValue(True)
 
-    ALLOWED_HOSTS = values.ListValue([])
+    ALLOWED_HOSTS = ['127.0.0.1']
 
     # Application definition
 
@@ -48,6 +48,7 @@ class Dev(Configuration):
 
     MIDDLEWARE = [
         'debug_toolbar.middleware.DebugToolbarMiddleware',
+        'whitenoise.middleware.WhiteNoiseMiddleware',
         'django.middleware.security.SecurityMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.middleware.common.CommonMiddleware',
