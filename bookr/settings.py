@@ -28,7 +28,7 @@ class Dev(Configuration):
     # SECURITY WARNING: don't run with debug turned on in production!
     DEBUG = values.BooleanValue(True)
 
-    ALLOWED_HOSTS = ['127.0.0.1','datasoltutions.herokuapp.com']
+    ALLOWED_HOSTS = ['datasoltutions.herokuapp.com']
 
     # Application definition
 
@@ -122,9 +122,11 @@ class Dev(Configuration):
     # https://docs.djangoproject.com/en/dev/howto/static-files/
 
     STATIC_URL = '/static/'
-    # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    STATIC_ROOT = values.Value()
+    
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    # STATIC_ROOT = values.Value()
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
     MEDIA_ROOT = values.Value(os.path.join(BASE_DIR, 'media'))
     MEDIA_URL = '/media/'
