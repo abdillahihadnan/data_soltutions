@@ -1,2 +1,2 @@
-web: gunicorn datasoltutions:app
+web: gunicorn data_soltutons/bookr:wsgi
 
