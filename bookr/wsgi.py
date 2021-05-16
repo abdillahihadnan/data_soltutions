@@ -11,7 +11,7 @@ import os
 
 from configurations.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'data_soltutions/bookr.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bookr.settings')
 os.environ.setdefault('DJANGO_CONFIGURATION', 'Prod')
 
 application = get_wsgi_application()
