@@ -28,7 +28,7 @@ class Dev(Configuration):
     # SECURITY WARNING: don't run with debug turned on in production!
     DEBUG = values.BooleanValue(True)
 
-    ALLOWED_HOSTS = ['127.0.0.1','datasoltutions.herokuapp.com/']
+    ALLOWED_HOSTS = ['127.0.0.1','datasoltutions.herokuapp.com']
 
     # Application definition
 
