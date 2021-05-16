@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 
 import os
 
+import django_heroku
+
 from configurations import Configuration, values
 
 
@@ -137,3 +139,6 @@ class Dev(Configuration):
 class Prod(Dev):
     DEBUG = False
     SECRET_KEY = values.SecretValue()
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
