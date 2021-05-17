@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-sm-6 col-md-4">
                                 <div class="topbar-links">
-                                    <a href="signin.html"><i class="fa fa-lock"></i>Login</a>
+                                    <a href="{% url 'login'%}"><i class="fa fa-lock"></i>Login</a>
                                     <a href="signup.html">Register</a>
                                     
                                     
@@ -75,21 +75,16 @@
                                 <div class="collapse navbar-collapse hidden-sm hidden-xs">
                                     <ul class="nav navbar-nav mr-auto">
                             
-                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'index'%}"> Home</a></li>
 
-                                        <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'about'%}">About</a></li>
 
-                                        <li class="nav-item"><a class="nav-link" href="news-events-list-view.html">News &amp; Blog </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'blog'%}">News &amp; Blog </a></li>
 
-                                        <li class="nav-item"><a class="nav-link" href="publications.html"> Publications </a></li>
-                                            
-                            
-                                            
-                                        
-                                        
-                                        <li class="nav-item"><a class="nav-link" href="events-list.html">Events </a></li>
-                                            
-                                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'book_list'%}"> Publications </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'contects'%}"> Contacts </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'events'%}"> Events</a></li>
+                                
                                     </ul>
                                 </div>
                             </div>
