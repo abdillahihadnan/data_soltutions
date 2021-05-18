@@ -1,3 +1,222 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
 {% load static %}
-{% block brand %}<img src="{% static 'reviews/logo.png' %}">{% endblock %}
+<html lang="zxx">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Title -->
+    <title> Publications</title>
+
+    <!-- Favicon -->
+    <link href="{% static 'images/new_images/logo2.png' %}" rel="icon" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Animation-->
+    <link href="{% static 'css/aos.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Mobile Menu -->
+    <link href="{% static 'css/mmenu.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/mmenu.positioning.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static './css/jquery-ui.min.css' %}">
+    <link href="{% static './css/style.css' %}" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+                                    <script src="js/html5shiv.min.js"></script>
+                                    <script src="js/respond.min.js"></script>
+                                    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Start: Header Section -->
+    <header id="header" class="inner-navbar-wrapper navbar-wrapper">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'images/new_images/logo2.png'%}" alt="Skille" />
+                </a>
+                <div class="inner-header-search">
+                    <input class="form-control" type="text" placeholder="Search Anything">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav mr-auto">
+                            
+                        <li class="nav-item"><a class="nav-link" href="{% url 'index'%}"> Home</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'about'%}">About</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'blog'%}">News &amp; Blog </a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'book_list'%}"> Publications </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'contects'%}"> Contacts </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{% url 'events'%}"> Events</a></li>
+                                
+                    </ul>
+                    <div class="header-login-btn">
+                        <a href="{% url 'login'%}" class="btn btn-light"><i class="fa fa-user"></i>
+                            Login</a>
+                        
+                    </div>
+                </div>
+            </nav>
+            <!-- Header Main Navigation End-->
+            <!-- Mobile Navigation-->
+            <div class="mobile-menu d-lg-none">
+                <a href="#mobile-menu"><i class="fa fa-navicon"></i></a>
+                <div id="mobile-menu">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="mobile-title">
+                            <h4>Navigation</h4>
+                            <a href="#" class="close"></a>
+                        </li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="{% url 'index'%}"> Home</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about'%}">About</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="{% url 'blog'%}">News &amp; Blog </a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="{% url 'book_list'%}"> Publications </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contects'%}"> Contacts </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'events'%}"> Events</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- Mobile Navigation End-->
+        </div>
+    </header>
+    <!-- End: Header Section -->
+
+{% block content %}
+{% endblock %}
+
+<footer class="site-footer">
+    <div class="container" data-aos="fade-down">
+        <div class="footer-widgets">
+            <div class="row w-100">
+                <div class="col-lg-5 col-md-6 widget-container">
+                    <div id="text-2" class="widget widget_text">
+                        <div class="about-us">
+                            <a href="index.html">
+                                <img src="{% static 'images/new_images/logo.png' %}" alt="LIBRARIA" />
+                            </a>
+                        </div>
+                        <div class="textwidget">
+                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, as opposed to using 'Content here, content here', making it look like readable
+                            English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                            their default model text, and a search for 'lorem ipsum' will uncover many web sites
+                            still in their infancy. Various versions have evolved over the years, sometimes by
+                            accident, sometimes on purpose (injected humour and the like).
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 widget-container">
+                    <div id="nav_menu-2" class="widget widget_nav_menu">
+                        <h3 class="footer-widget-title">Quick Links</h3>
+                        <div class="menu-quick-links-container">
+                            <ul id="menu-quick-links" class="menu">
+                                <li><a href="#">Library News</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Meet Our Staff</a></li>
+                                <li><a href="#">Board of Trustees</a></li>
+                                <li><a href="#">Budget</a></li>
+                                <li><a href="#">Annual Report</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 widget-container">
+                    <div class="widget twitter-widget">
+                        <h3 class="footer-widget-title">Contact Info</h3>
+                        <address>
+                            <div class="info">
+                                <i class="fa fa-location-arrow"></i>
+                                <span>21 King Street, Melbourne, Victoria 3000 Australia</span>
+                            </div>
+                            <div class="info">
+                                <i class="fa fa-envelope"></i>
+                                <span><a href="mailto:support@skille.com">support@skille.com</a></span>
+                            </div>
+                            <div class="info">
+                                <i class="fa fa-phone"></i>
+                                <span><a href="tel:012-345-6789">+ 012-345-6789</a></span>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+</footer>
+<!-- End: Footer -->
+
+<!-- jQuery Latest Version 1.x -->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+
+<!-- jQuery Easing -->
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+
+<!-- Bootstrap -->
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Mobile Menu -->
+<script src="{% static 'js/mmenu.min.js' %}"></script>
+
+<!-- Harvey - State manager for media queries -->
+<script src="{% static 'js/harvey.min.js' %}"></script>
+
+<!-- Bootstrap Dragable Carousel -->
+<script src="{% static 'js/touchSwipe.js' %}"></script>
+
+<!-- UI Animation -->
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/highlight.min.js' %}"></script>
+
+<!-- Waypoints - Load Elements on View -->
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+
+<!-- Facts Counter -->
+<script src="{% static 'js/facts.counter.min.js' %}"></script>
+
+<!-- MixItUp - Category Filter -->
+<script src="{% static 'js/mixitup.min.js' %}"></script>
+
+<!-- Owl Carousel -->
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+<!-- Accordion -->
+<script src={% static "js/accordion.min.js" %}></script>
+
+<!-- Masonry -->
+<script src={% static "js/masonry.min.js" %}></script>
+
+<!-- Carousel Swipe -->
+<script src={% static "js/carousel.swipe.min.js" %}></script>
+
+<!-- Testimonial Home Page V3 -->
+<script src={% static "js/card-slider-min.js" %}></script>
+
+<!-- Custom Scripts -->
+<script src={% static "js/main.js" %}></script>
+
+</body>
+
+</html>

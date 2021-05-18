@@ -1,0 +1,301 @@
+{% extends 'reviews/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Start: Page Banner -->
+    <section class="inner-page-banner">
+        <div class="container">
+            <div class="banner-header">
+                <h2>Events</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Events</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- End: Page Banner -->
+
+    <!-- Start: Products Section -->
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+                <div class="main-news-list">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4">
+                                <aside id="secondary" class="sidebar widget-area">
+                                    <div class="widget search-widget">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Search Here">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                    <div class="widget widget_categories">
+                                        <h3 class="widget-title">Event Categories</h3>
+                                        <ul>
+                                            <li><a href="#">Love stories</a> <span>(68)</span></li>
+                                            <li><a href="#">Education</a> <span>(129)</span></li>
+                                            <li><a href="#">Students</a> <span>(170)</span></li>
+                                            <li><a href="#">Teachers</a> <span>(30)</span></li>
+                                            <li><a href="#">Learning</a> <span>(35)</span></li>
+                                            <li><a href="#">Online</a> <span>(145)</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget widget_blog_post">
+                                        <h3 class="widget-title">Popular Events</h3>
+                                        <ul>
+                                            <li>
+                                                <span class="widget-thumb">
+                                                    <a href="blog-detail.html"><img src="images/blog/widget-post-01.jpg"
+                                                            alt="widget thumb"></a>
+                                                </span>
+                                                <div class="widget-post-data">
+                                                    <small>09 Dec, 2020</small>
+                                                    <h4><a href="post-detail.html">The Study Strategy Guidebook:
+                                                            Techniques that Work with Your Brain</a></h4>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="widget-thumb">
+                                                    <a href="blog-detail.html"><img src="images/blog/widget-post-01.jpg"
+                                                            alt="widget thumb"></a>
+                                                </span>
+                                                <div class="widget-post-data">
+                                                    <small>09 Dec, 2020</small>
+                                                    <h4><a href="post-detail.html">Develop Your Study Skills to Work
+                                                            Smarter, Not Harder</a></h4>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="widget-thumb">
+                                                    <a href="blog-detail.html"><img src="images/blog/widget-post-01.jpg"
+                                                            alt="widget thumb"></a>
+                                                </span>
+                                                <div class="widget-post-data">
+                                                    <small>09 Dec, 2020</small>
+                                                    <h4><a href="post-detail.html">The Ups and Downs of Using the
+                                                            Smartphone as an Educational Tool</a></h4>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="widget-thumb">
+                                                    <a href="blog-detail.html"><img src="images/blog/widget-post-01.jpg"
+                                                            alt="widget thumb"></a>
+                                                </span>
+                                                <div class="widget-post-data">
+                                                    <small>09 Dec, 2020</small>
+                                                    <h4><a href="post-detail.html">Goodbye School, Hello Creative
+                                                            Expression!… Or not?</a></h4>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget widget_event_archieves">
+                                        <h3 class="widget-title">Event Archieves</h3>
+                                        <div class="widget-inner">
+                                            <div class="form-group">
+                                                <select name="category" id="category" class="form-control">
+                                                    <option>Select Month</option>
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>March</option>
+                                                    <option>April</option>
+                                                    <option>May</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="widget widget_tag_cloud">
+                                        <h3 class="widget-title">Event Tags</h3>
+                                        <ul>
+                                            <li><a href="#">Education</a></li>
+                                            <li><a href="#">Students</a></li>
+                                            >
+                                        </ul>
+                                    </div>
+                                    <div class="widget twitter-widget">
+                                        <h3 class="widget-title">Recent Tweets</h3>
+                                        <div id="twitter-feed-sidebar">
+                                            <ul>
+                                                <li>
+                                                    <p><a href="#">@TemplateLibraria</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <a href="#">template-libraria.com</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="#">@TemplateLibraria</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <a href="#">template-libraria.com</a></p>
+                                                </li>
+                                                <li>
+                                                    <p><a href="#">@TemplateLibraria</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <a href="#">template-libraria.com</a></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                            <div class="col-md-12 col-lg-8 news-events-list-view">
+                                <div class="news-list-box">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="single-news-list">
+                                                <figure>
+                                                    <div class="action-btn">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-heart-o"></i> Add To
+                                                                    Wishlist</a></li>
+                                                            <li><a href="#">Book Your Seat</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="news-events-detail.html"><img
+                                                            src="images/news-event/news-event-01.jpg"
+                                                            alt="News &amp; Event"></a>
+                                                </figure>
+                                                <div class="content-block">
+                                                    <div class="event-detail">
+                                                        <span class="event-date">
+                                                            <strong>24</strong>
+                                                            Dec
+                                                        </span>
+                                                        <div class="news-event-info">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-clock-o"></i>
+                                                                        10:15 AM - 10:15 PM
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-map-marker"></i>
+                                                                        New York, USA
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                    <h3 class="news-event-title"><a href="news-events-detail.html">The
+                                                            Understanding Learning Trends
+                                                            Online Conference</a></h3>
+                                                    <p>The Understanding Learning Trends Online Conference will explore today’s hottest industry trends and the strategies, tools.</p>
+                                                    <a class="link" href="news-events-detail.html"><img
+                                                            src="images/link-arrow.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-news-list">
+                                                <figure>
+                                                    <div class="action-btn">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fa fa-heart-o"></i> Add To
+                                                                    Wishlist</a></li>
+                                                            <li><a href="#">Book Your Seat</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="news-events-detail.html"><img
+                                                            src="images/news-event/news-event-01.jpg"
+                                                            alt="News &amp; Event"></a>
+                                                </figure>
+                                                <div class="content-block">
+                                                    <div class="event-detail">
+                                                        <span class="event-date">
+                                                            <strong>10</strong>
+                                                            Dec
+                                                        </span>
+                                                        <div class="news-event-info">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-clock-o"></i>
+                                                                        10:15 AM - 10:15 PM
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-map-marker"></i>
+                                                                        New York, USA
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                    <h3 class="news-event-title"><a href="news-events-detail.html">Designing eLearning With
+                                                            Captivate Course</a></h3>
+                                                    <p>The Understanding Learning Trends Online Conference will explore today’s hottest industry trends and the strategies, tools.</p>
+                                                    <a class="link" href="news-events-detail.html"><img
+                                                            src="images/link-arrow.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- End: Products Section -->
+
+    <!-- Start: Testimonial Section -->
+    <section class="testimonial-main-v3">
+        <div class="container">
+            <div class="testimonial-social-main" style="background-image: none;">
+                <div class="row">
+                    <div class="col-md-10 mx-auto text-center">
+                        <h6 class="sub-heading-v2">Newsletter</h6>
+                        <h2 class="heading-v2">Subscribe Our Newsletter</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="form-group newsletter-inner">
+                            <input class="form-control" placeholder="Enter your Email!" id="newsletter" name="newsletter" type="email">
+                            <input class="btn btn-primary" value="Subscribe" type="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons-v3">
+                <ul>
+                    <li>
+                        <a class="facebook" href="#" target="_blank">
+                        <span><i class="fa fa-facebook-f"></i> <small>Facebook</small></span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="#" target="_blank">
+                        <span><i class="fa fa-twitter"></i> <small>Twitter</small></span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="rss" href="#" target="_blank">
+                        <span><i class="fa fa-rss"></i> <small>Rss Feed</small></span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="linkedin" href="#" target="_blank">
+                        <span><i class="fa fa-linkedin"></i> <small>Linkedin</small></span>
+                    </a>
+                    </li>
+                    <li>
+                        <a class="youtube" href="#" target="_blank">
+                        <span><i class="fa fa-youtube"></i> <small>Youtube</small></span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End: Testimonial Section -->
+
+    <!-- Start: Footer -->
+
+    {% endblock %}

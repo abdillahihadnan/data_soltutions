@@ -8,6 +8,12 @@ router.register(r'books', api_views.BookViewSet)
 router.register(r'reviews', api_views.ReviewViewSet)
 
 urlpatterns = [
+    path('index/',views.index ,  name ='index'),
+    path('about/',views.about ,  name ='about'),
+    path('contects/',views.contects,  name ='contects'),
+    path('events/',views.events,  name ='events'),
+    path('blog/',views.blog,  name ='blog'),
+    
     path('api/login', api_views.Login.as_view(), name='login'),
     path('api/', include((router.urls, 'api'))),
     path('books/', views.book_list, name='book_list'),
@@ -16,5 +22,5 @@ urlpatterns = [
     path('books/<int:book_pk>/reviews/<int:review_pk>/', views.review_edit, name='review_edit'),
     path('books/<int:pk>/media/', views.book_media, name='book_media'),
     path('publishers/<int:pk>/', views.publisher_edit, name='publisher_detail'),
-    path('publishers/new/', views.publisher_edit, name='publisher_create')
+    path('publishers/new/', views.publisher_edit, name='publisher_create'),
 ]

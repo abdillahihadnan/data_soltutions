@@ -41,6 +41,22 @@ def index2(request):
     }
     return render(request, "reviews/index2.html", context)
 
+def about(request):
+    return render(request, "reviews/about-us.html")
+
+def contects(request):
+    return render(request, "reviews/contact.html")
+
+def blog(request):
+    return render(request, "reviews/news-events-list-view.html")
+
+def events(request):
+    return render(request, "reviews/events-list.html")
+
+def login(request):
+    return render(request, "reviews/signin.html")
+
+
 
 def book_search(request):
     search_text = request.GET.get("search", "")
