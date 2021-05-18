@@ -39,8 +39,8 @@
     <header id="header" class="inner-navbar-wrapper navbar-wrapper">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="{% static 'images/new_images/logo2.png'%}" href="{% url 'index'%}" alt="Skille" />
+                <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'images/new_images/logo2.png'%}" alt="Skille" />
                 </a>
                 <div class="inner-header-search">
                     <input class="form-control" type="text" placeholder="Search Anything">
@@ -78,18 +78,15 @@
                             <a href="#" class="close"></a>
                         </li>
                         
-                            
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'index'%}"> Home</a></li>
 
-                            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about'%}">About</a></li>
 
-                            <li class="nav-item"><a class="nav-link" href="news-events-list-view.html">News &amp; Blog </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'blog'%}">News &amp; Blog </a></li>
 
-                            <li class="nav-item"><a class="nav-link" href="publications.html"> Publications </a></li>
-                          
-                            <li class="nav-item"><a class="nav-link" href="events-list.html">Events </a></li>
-                                
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'book_list'%}"> Publications </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contects'%}"> Contacts </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'events'%}"> Events</a></li>
                         
                         
                     </ul>
