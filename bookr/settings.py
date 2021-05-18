@@ -43,7 +43,7 @@ class Dev(Configuration):
         'rest_framework.authtoken',
         'reviews',
         'debug_toolbar',
-        'crispy_forms'
+        'crispy_forms',
     ]
 
     MIDDLEWARE = [
